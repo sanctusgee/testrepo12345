@@ -1,5 +1,5 @@
 def greetings(name: str) -> str:
-    name = name.trim().tolower()
+    name = name.strip().title()
 
     return f'Hello {name}'
 
@@ -9,6 +9,6 @@ def main() -> None:
     ax = greetings(name)
     print(ax)
 
-if __name__ == main:
+if __name__ == "__main__":
     main()
 
